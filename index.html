@@ -1,119 +1,101 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Work</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<header class="header-class">
-    <div>
-        <h1>My Work</h1>
-        <nav>
-            <ul>
-                <li class="header-list" >
-                    <a href="#about">
-                        About
-                    </a>
-                </li>
-                <li class="headerlist"><a href="#works">Works</a></li>
-                <li class="headerlist"><a href="#news">News</a></li>
-                <li class="headerlist"><a href="#contact">Contact</a></li>
-                <li>
-                    <a href="https://www.instagram.com/">
-                        <img src="img/icon-instagram.png" alt="icon-instagram">
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <picture class="mainvisual">
-        <source srcset="img/Guam-sp.jpg" media="(max-width: 600px)">
-        <img src="img/Guam.jpg" alt="mainvisual-pc" media="(min-width: 600px)">
-    </picture>
-</header>
-<body>
-    <main>
-        <section class="about" id="about">
-            <h2>About</h2>
-            <ul>
-                <li class="first-about">Xxxxx Ashley</li>
-                <li>
-                    2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan
-                </li>
-                <li>tel: 000-0000-0000</li>
-                <li>url: www.xxxxxx.jp</li>
-                <li>mail: xxx@xxxxxx.jp</li>
-            </ul>
-            <p>
-                プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-            </p>
-        </section>
-        <section class="works" id="works">
-            <h2>Works</h2>
-            <ul>
-                <li>
-                    <img src="img/GuamPct1.jpg" alt="mg/works1.jpg">
-                </li>
-                <li>
-                    <img src="img/GuamPct2.jpg" alt="mg/GuamPct2.jpg">
-                </li>
-                <li>
-                    <img src="img/GuamPct3.jpg" alt="mg/GuamPct3.jpg">
-                </li>
-                <li>
-            </ul>
-        </section>
-        <section class="news" id="news">
-            <h2>News</h2>
-            <dl>
-                <dt> 2020.XX.XX</dt>
-                <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
-                <dt> 2020.XX.XX</dt>
-                <dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。
-                </dd>
-                <dt> 2019.XX.XX</dt>
-                <dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト
-                </dd>
-                <dt> 2019.XX.XX</dt>
-                <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。
-                </dd>
-                <dt> 2019.XX.XX</dt>
-                <dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト
-                </dd>
-            </dl>
-        </section>
-        <div  class="contact" id="contact">
-            <h2 class="contact-ttl">Contact</h2>
-            <form action="" >
-                <table class="contact-table">
-                    <tbody>
-                        <tr>
-                            <th class="contact-item">NAME</th>
-                            <td class="contact-body">
-                                <input type="text" name="名前"  class="form-text">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="contact-item">E-mail</th>
-                            <td class="contact-body">
-                                <input type="email" name="メール" class="form-text" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="contact-item">Message</th>
-                            <td class="contact-body">
-                                <textarea name="メッセージ" class="form-textarea"></textarea>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <input type="submit" class="contact-submit" value="送信">
-            </form>
-        </div>
-    </main>
-</body>
-<footer>@2020 MyWorks</footer>
-    
+    <head>
+        <meta charset="UTF-8">
+        <title>My Work</title>
+        <meta name="description" content="2019グアム旅行記VisitGuam">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <header id="header">
+            <h1 class="site-title"><a href="index.html"><img src="img/logo.svg" width="120px" alt="My Work"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#about">Works</a></li>
+                    <li><a href="#about">News</a></li>
+                    <li><a href="#about">Contact</a></li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img class="icon" src="./img/icon-instagram.png" alt="インスタグラム">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="mainvisual">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="img/Guam-sp.jpg" >
+                        <img src="img/Guam.jpg" height="400px" alt="mainvisual-pc"">
+                </picture>
+            </div>
+
+            <section id="about" class="wrapper">
+                <h2 class="sec-title">About</h2>
+                <ul>
+                    <li>Xxxxx Ashley</li>
+                    <li> 2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan</li>
+                    <li>tel: 000-0000-0000</li>
+                    <li>url: www.xxxxxx.jp</li>
+                    <li>mail: xxx@xxxxxx.jp</li>
+                </ul>
+                <p>
+                    プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                </p>
+            </section>
+
+            <section id="works" class="wrapper">
+                <h2 class="sec-title">Works</h2>
+                <ul>
+                    <li><img src="img/GuamPct1.jpg" alt="mg/works1.jpg"></li>
+                    <li><img src="img/GuamPct2.jpg" alt="mg/GuamPct2.jpg"></li>
+                    <li><img src="img/GuamPct3.jpg" alt="mg/GuamPct3.jpg"></li>
+                </ul>
+            </section>
+
+            <section id="news" class="wrapper" >
+                <h2 class="sec-title">News</h2>
+                <dl>
+                    <dt> 2020.XX.XX</dt>
+                    <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
+                    <dt> 2020.XX.XX</dt>
+                    <dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。
+                    </dd>
+                    <dt> 2019.XX.XX</dt>
+                    <dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト
+                    </dd>
+                    <dt> 2019.XX.XX</dt>
+                    <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。
+                    </dd>
+                    <dt> 2019.XX.XX</dt>
+                    <dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト
+                    </dd>
+                </dl>
+            </section>
+
+            <section id="contact" class="wrapper">
+                <h2 class="sec-title">Contact</h2>
+                <form action="#" method="post" >
+                    <dl>
+                        <dt><label for="name">NAME</label></dt>
+                        <dd><input type="text" name="名前"  class="form-text"></dd>
+                        <dt><label for="email">E-mai</label></dt>
+                        <dd><input type="email" id="email" name="your-wmail"></dd>
+                        <dt><label for="message">Message</label></dt>
+                        <dd><textarea id="message" name="your-message""></textarea></dd>
+                    </dl>
+                    <div class="button"><input type="submit" value="送信"></div>
+                </form>
+            </section>
+        </main>
+        <footer id="footer">
+            <p>&copy; 2020 My Work</p>
+        </footer>
+    </body>
 </html>

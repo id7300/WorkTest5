@@ -1,284 +1,263 @@
+@charset "UTF-8";
+
 /* webフォントのインストールを行います。 */
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
-header {
+/* やり直しコード入力 */
+html {
+    font-size: 100%;
     font-family: 'Amatic SC', cursive;
 }
 
-.header-class div {
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-between;
-    margin: 90px 0px 0 0;
+body {
+    color: #24292e;
 }
-
-nav {
-    color: #000;
-    font-weight: bold;
-    text-align: center;
-    line-height: 32px;
-    /* background-color: #3CB371; */
-    /* margin: 0px 8px; */
-    width: 100%;
+a {
+    text-decoration: none;
 }
-
-/* わかりやすく表示して、後で消す */
-main {
-    color: rgb(51, 48, 48);
-    font-weight: bold;
-    text-align: center;
-    line-height: 24px;
-    /* background-color: #84d8fa; */
-    margin: 16px;
-    width: 100%;
-    font-family: 'Amatic SC', cursive;
-    font-size: 24px;
+img {
+    max-width: 100%;
 }
-
-p,
-dd,
-input {
-    font-size: 16px;
-    color: rgb(112, 110, 110);
-}
-
-/* フッターのデフォルト設定 */
-footer {
-    text-align: center;
-    font-family: 'Vollkorn', serif;
-}
-
-/* ulのpaddingをデフォルトで設定する */
-ul {
-    padding: 0px 8px 0px 8px;
-}
-
-/* リストのデフォルト設定 */
 li {
     list-style: none;
 }
 
-/* 見出しのデフォルト設定 */
-h1, h2 {
-    text-align: center;
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto 80px auto;
+    font-size: 1.2rem;
+    padding: 0 4%;
+}
+.site-title {
+    line-height: 1px;
     font-family: 'Sacramento', cursive;
-    font-size: 32px;
-    padding: 32px 16px;
 }
-
-h1 {
-    font-family: monospace;
-    width: 100%;
+.site-title a {
+    display: block;
+}
+.sec-title {
+    font-size: 3rem;
     text-align: center;
-    margin: 0px 8px 0px 16px;
+    margin-top: 24px;
+    margin-bottom: 65px;
+    font-family: 'Sacramento', cursive;
 }
 
-section {
-    justify-content: center;
-}
-
-nav ul {
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+    max-width: 960px;
     display: flex;
     justify-content: space-between;
-    margin: 0px;
-    /* line-height: 16px; */
-    vertical-align: bottom;
-    padding: 0px;
-    margin: 32px 24px 32px 0px;
-}
-
-nav ul li {
-    margin: 8px;
-    font-size: 24px;
-}
-
-nav img {
-    width: 16px;
-    height: 16px;
-    vertical-align: baseline;
-}
-
-nav li :hover {
-    cursor: pointer;
-}
-
-nav li a {
-    text-decoration: none;
-}
-
-/* Aboutの設定 */
-.first-about {
-    margin: 32px 0px;
-}
-
-.about p {
-    padding:  0px 8px 0px 16px;
-    text-align: left;
-}
-
-/* ヘッダー下写真の挙動 */
-.mainvisual img {
-    object-fit: cover;
-    width: 100%;
-    max-height:  400px;
-}
-
-@media (min-width: 600px) {
-header .mainvisual img {
-    object-fit: cover;
-    height: 430px;
-}
-
-    .works ul {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: repeat(3, minmax(200px, 1fr));
-        max-width: 100%;
-    }
-}
-
-@media (min-width: 960px) {
-    body main {
-        width: 960px;
-        margin: 0 auto;
-    }
-    
-    .header-class {
-        max-width: 100%;
-    }
-    
-    .header-list img {
-        max-width: 100%;
-    }
-    
-    .works img {
-        width: 100%;
-    }
-}
-
-.works ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.works ul {
-    padding: 0px;
-}
-
-.works img {
-    max-width: 420px;
-    height: 40vh;
-    margin: 16px;
-    padding: 0px;
-}
-
-section li {
-    text-align: left;
-}
-
-section ul p  {
-    text-align: left;
-    padding-left: 16px;
-}
-
-.news dl {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.news dt {
-    width: 25%;
-    margin-left: 16px;
-    padding: 8px;
-    border-top: 1px dashed #ddd;
-    border-bottom: 1px dashed #ddd;
-}
-
-.news dd {
-    width: 50%;
-    margin: 0px;
-    padding: 8px 8px 8px 32px;
-    text-align: left;
-    border-top: 1px dashed #ddd;
-    border-bottom: 1px dashed #ddd;
-}
-
-.contact {
-    width: 100%;
+    align-items: center;
+    height: 270px;
     margin: 0 auto;
-    padding: 32px 0;
+    padding: 0 4%;
+    font-family: 'Amatic SC', cursive;
 }
 
-.contact-table {
+#header ul {
+    display: flex;
+    padding: 10px 0;
+}
+#header li {
+    font-size: 2.0rem;
+    margin-left: 30px;
+}
+#header li a {
+    color: #24292e;
+}
+#header li a:hover {
+    opacity: 0.7;
+}
+#header li img.icon {
+    width: 20px;
+}
+  
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+    margin-bottom: 80px;
+}
+#mainvisual img {
     width: 100%;
+    max-width: 1920px;
+    object-fit: cover;
+}
+  
+/*-------------------------------------------
+About
+-------------------------------------------*/
+#about ul {
+    margin-bottom: 30px;
+}
+
+#about li:first-child {
+    margin-bottom: 30px;
+}
+#about p {
+    text-align:justify;
+}
+  
+/*-------------------------------------------
+Works
+-------------------------------------------*/
+#works ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+#works li {
+    width: 31%;
+    margin-bottom: 23px;
+}
+  
+/*-------------------------------------------
+News
+-------------------------------------------*/
+#news dl {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: solid 1px #c8c8c8;
     margin-bottom: 20px;
 }
-
-.contact-table tr {
+#news dt {
+    width: 20%;
+    border-bottom: solid 1px #c8c8c8;
+    padding: 15px;
+}
+#news dd {
+    width: 80%;
+    border-bottom: solid 1px #c8c8c8;
+    padding: 15px;
+}
+  
+/*-------------------------------------------
+Contact
+-------------------------------------------*/
+#contact dl {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
-.contact th {
+#contact dt {
     width: 15%;
-    vertical-align: top;
-    text-align: right;
 }
-
-.contact td {
-    width: 70%;
-    vertical-align: top;
+#contact dd {
+    width: 85%;
+    margin-bottom: 10px;
 }
-
-.contact-item,
-.contact-body {
-    padding: 20px;
-}
-
-.contact-item {
-    text-align: left;
-    width: 30%;
-    padding: 8px;
-}
-
-.contact-body {
+#contact dd input,
+#contact dd textarea {
     width: 100%;
-    padding: 8px;
-}
-
-.form-text {
-    width: 90%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    max-width: 95%;
-}
-
-.form-textarea {
-    width: 90%;
+    border: solid 1px #c8c8c8;
     padding: 10px;
-    height: 150px;
-    border: 1px solid #ccc;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+}
+#contact dd textarea {
+    height: 10rem;
+}
+#contact .button {
+    text-align: center;
 }
 
-.contact-submit {
+#contact .button input {
     width: 200px;
-    max-width: 95%;
-    background-color: rgb(66, 65, 65);
+    background-color: #24292e;
     color: #fff;
-    font-weight: bold;
-    display: block;
-    margin: 0 auto;
-    font-size: 16px;
-    padding: 16px 8px;
-    border: none;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    cursor: pointer;
+    padding: 15px 0;
+    border: solid 1px #24292e;
 }
+
+#contact .button input:hover {
+    background: #fff;
+    color: #24292e;
+}
+
+  
+/*-------------------------------------------
+  フッター
+-------------------------------------------*/
+
+#footer {
+    background-color: #24292e;
+    color: #fff;
+    font-size: 0.5rem;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: 'Vollkorn', serif;
+}
+  
+/*-------------------------------------------
+  SP
+-------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+      margin-bottom: 70px;
+    }
+    .site-title {
+      margin-top: 20px;
+    }
+    .sec-title {
+      margin-bottom: 40px;
+    }
+  
+    /*-------------------------------------------
+    ヘッダー
+    -------------------------------------------*/
+    #header {
+      max-width: 100%;
+      height: auto;
+      flex-direction: column;
+    }
+    #header li {
+      font-size: 0.8rem;
+      margin-left: 20px;
+    }
+    #header li:first-child {
+      margin-left: 0;
+    }
+  
+    /*-------------------------------------------
+    Works
+    -------------------------------------------*/
+    #works ul {
+      flex-direction: column;
+    }
+    #works li {
+      width: 100%;
+    }
+  
+    /*-------------------------------------------
+    News
+    -------------------------------------------*/
+    #news dl {
+      flex-direction: column;
+    }
+    #news dt {
+      width: 100%;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    #news dd {
+      width: 100%;
+      padding-top: 0;
+    }
+  
+    /*-------------------------------------------
+    Contact
+    -------------------------------------------*/
+    #contact dl {
+      flex-direction: column;
+    }
+    #contact dt {
+      width: 100%;
+    }
+    #contact dd {
+      width: 100%;
+    }
+  }
